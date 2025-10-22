@@ -7,6 +7,6 @@ def read_root():
     return {"message": "fast-crud API is running"}
 
 
-@app.get("/health"):
+@app.get("/health")
 def health():
     return {"stuts": "ok"}
