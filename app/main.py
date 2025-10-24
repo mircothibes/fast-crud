@@ -6,7 +6,7 @@ from app.routers.users import router as users_router
 app = FastAPI(title="fast-crud")
 
 # Temporary: create tables at startup
-Base.metadata.create_all(bind=engine
+Base.metadata.create_all(bind=engine)
 
 @app.get("/")
 def read_root():
