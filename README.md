@@ -79,3 +79,40 @@ Once running:
 
 ---
 
+## 🔍 API Quick Test (cURL)
+```bash
+
+# Create a user
+curl -X POST http://localhost:8000/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Ana","email":"ana@example.com"}'
+
+# List all users
+curl http://localhost:8000/users
+
+# Get user by ID
+curl http://localhost:8000/users/1
+
+# Update a user
+curl -X PUT http://localhost:8000/users/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Ana Maria","email":"ana.maria@example.com"}'
+
+# Delete a user
+curl -X DELETE http://localhost:8000/users/1 -i
+```
+
+---
+
+## 📦 Dependencies (requirements.txt)
+
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+email-validator
+
+
+---
