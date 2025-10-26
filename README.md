@@ -118,12 +118,17 @@ email-validator
 ---
 
 ## 📘 Learnings and Highlights
-
+```bash
 ✅ Python + FastAPI CRUD structure
 ✅ Environment management with .env
 ✅ PostgreSQL database connection via SQLAlchemy
 ✅ Docker Compose orchestration (multi-container setup)
 ✅ Health checks and service dependencies
 ✅ Modular codebase: models, schemas, crud, routers
+```
 
 ---
+
+## 🧑‍💻 Author
+
+Marcos Vinicius Thibes Kemer
