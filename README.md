@@ -105,7 +105,7 @@ curl -X DELETE http://localhost:8000/users/1 -i
 ---
 
 ## 📦 Dependencies (requirements.txt)
-
+```bash
 fastapi
 uvicorn[standard]
 sqlalchemy
@@ -113,6 +113,17 @@ psycopg2-binary
 python-dotenv
 pydantic
 email-validator
+```
 
+---
+
+## 📘 Learnings and Highlights
+
+✅ Python + FastAPI CRUD structure
+✅ Environment management with .env
+✅ PostgreSQL database connection via SQLAlchemy
+✅ Docker Compose orchestration (multi-container setup)
+✅ Health checks and service dependencies
+✅ Modular codebase: models, schemas, crud, routers
 
 ---
