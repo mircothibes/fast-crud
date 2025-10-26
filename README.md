@@ -35,4 +35,47 @@ The `fast-crud` project provides a small REST API that manages **users** with th
 
 ## 🧩 Project Structure
 
+```bash
+fast-crud/
+├── app/
+│ ├── crud/
+│ │ └── user.py
+│ ├── models/
+│ │ └── user.py
+│ ├── routers/
+│ │ └── users.py
+│ ├── schemas/
+│ │ └── user.py
+│ ├── database.py
+│ └── main.py
+├── Dockerfile
+├── docker-compose.yml
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🐳 Docker Compose Setup
+
+Two containers are created:
+
+- fast-crud-db → PostgreSQL database
+- fast-crud-api → FastAPI application
+
+---
+
+## 🧱 Build and Run
+```bash
+# Build and start containers
+docker compose up --build
+```
+
+Once running:
+
+- API: http://localhost:8000
+- Docs: http://localhost:8000/docs
+
+---
 
