@@ -6,7 +6,7 @@ from app.schemas.user import UserCreate
 
 
 def create_user(db: Session, user_in: UserCreate) -> User:
-    user = User(name=user_in.name, email=user_in.email)
+    user = User(name=user_in.name.strip(), email=user_in.email.lower()).strip()
     db.add(user)
     try:
         db.commit()
@@ -29,8 +29,8 @@ def update_user(db: Session, user_id: int, user_in: UserCreate) -> User:
     user = get_user(db, user_id)
     if not user:
         raise LookupError("User not found")
-    user.name = user_in.name
-    user.email = user_in.email
+    user.name = user_in.name.strip()
+    user.email = user_in.email.lower().strip()
     try:
         db.commit()
     except IntegrityError:
