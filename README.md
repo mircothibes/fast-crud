@@ -79,6 +79,19 @@ Once running:
 
 ---
 
+## 🔐 Environment Variables (.env)
+```bash
+POSTGRES_USER=app_user
+POSTGRES_PASSWORD=supersecret
+POSTGRES_DB=app_db
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+DATABASE_URL=postgresql+psycopg2://app_user:supersecret@db:5432/app_db
+```
+All variables are automatically loaded by Docker Compose.
+
+---
+
 ## 🔍 API Quick Test (cURL)
 ```bash
 
