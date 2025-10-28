@@ -173,3 +173,6 @@ email-validator
 ## 🧑‍💻 Author
 
 Marcos Vinicius Thibes Kemer
+
+💡 This project was built for learning purposes —
+a clean and minimal CRUD foundation using modern Python tools.
