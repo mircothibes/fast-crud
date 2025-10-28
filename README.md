@@ -114,7 +114,7 @@ Once running, open your browser:
 ```
 
 - Swagger UI: http://localhost:8000/docs
-  Interactive API documentation powered by FastAPI.
+- Interactive API documentation powered by FastAPI.
 
 
 ---
