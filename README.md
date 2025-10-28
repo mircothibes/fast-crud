@@ -92,6 +92,33 @@ All variables are automatically loaded by Docker Compose.
 
 ---
 
+## 🔁 Development Mode (Hot Reload)
+
+The Dockerfile runs Uvicorn with --reload,
+so every change you make inside the app/ folder automatically restarts the server.
+
+```bash
+docker compose up --build
+# Edit any .py file → FastAPI reloads instantly
+```
+
+---
+
+## 🚀 Preview
+
+Once running, open your browser:
+- Root endpoint: http://localhost:8000
+  Returns:
+```bash
+{"message": "🔥 fast-crud hot-reload is working!"}
+```
+
+- Swagger UI: http://localhost:8000/docs
+  Interactive API documentation powered by FastAPI.
+
+
+---
+
 ## 🔍 API Quick Test (cURL)
 ```bash
 
@@ -138,6 +165,7 @@ email-validator
 ✅ Docker Compose orchestration (multi-container setup)
 ✅ Health checks and service dependencies
 ✅ Modular codebase: models, schemas, crud, routers
+✅ Hot-reload for development
 ```
 
 ---
