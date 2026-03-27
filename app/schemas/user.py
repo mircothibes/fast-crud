@@ -1,5 +1,6 @@
 from datetime import datetime
 from pydantic import BaseModel, EmailStr, Field
+from pydantic import ConfigDict
 
 class UserBase(BaseModel):
     name: str = Field(min_length=3, max_length=100)
@@ -11,7 +12,4 @@ class UserCreate(UserBase):
 class UserRead(UserBase):
     id: int
     created_at: datetime
-
-    class Config:
-        from_attributes = True  # pydantic v2: allows ORM objects
-
+    model_config = ConfigDict(from_attributes=True)
