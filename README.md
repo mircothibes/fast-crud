@@ -176,3 +176,11 @@ Marcos Vinicius Thibes Kemer
 
 💡 This project was built for learning purposes —
 a clean and minimal CRUD foundation using modern Python tools.
+
+## 🌐 Live Demo
+
+| Endpoint | URL |
+|----------|-----|
+| API docs | https://fast-crud-production.up.railway.app/docs |
+| Health check | https://fast-crud-production.up.railway.app/health |
+
